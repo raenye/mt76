@@ -412,6 +412,7 @@ mt7615_init_wiphy(struct ieee80211_hw *hw)
 	phy->mt76->sband_2g.sband.ht_cap.cap |= IEEE80211_HT_CAP_LDPC_CODING;
 	phy->mt76->sband_2g.sband.vht_cap.cap |=
 			IEEE80211_VHT_CAP_MAX_A_MPDU_LENGTH_EXPONENT_MASK;
+	phy->mt76->sband_2g.sband.vht_cap.vendor_qam256_supported = true;
 	phy->mt76->sband_5g.sband.ht_cap.cap |= IEEE80211_HT_CAP_LDPC_CODING;
 	phy->mt76->sband_5g.sband.vht_cap.cap |=
 			IEEE80211_VHT_CAP_MAX_A_MPDU_LENGTH_EXPONENT_MASK;

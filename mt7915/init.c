@@ -413,6 +413,7 @@ mt7915_init_wiphy(struct mt7915_phy *phy)
 				IEEE80211_VHT_CAP_MAX_MPDU_LENGTH_11454 |
 				IEEE80211_VHT_CAP_MAX_A_MPDU_LENGTH_EXPONENT_MASK;
 		}
+		vht_cap->vendor_qam256_supported = true;
 	}
 
 	if (phy->mt76->cap.has_5ghz) {
